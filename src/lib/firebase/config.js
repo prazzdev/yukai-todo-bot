@@ -1,6 +1,6 @@
 require("dotenv").config({ path: ".env.local" });
 const admin = require("firebase-admin");
-const serviceAccount = require("<path/to/serviceAccountKey.json>");
+const serviceAccount = require("../../../service-account-key.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
