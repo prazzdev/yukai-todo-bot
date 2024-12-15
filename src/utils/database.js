@@ -38,14 +38,15 @@ const deleteData = async (userId, collectionName, dataId) => {
 const updateData = async (
   userId,
   collectionName,
-  previousData,
+  editFieldId,
+  key,
   updatedData
 ) => {
   const collectionRef = db
     .collection("users")
     .doc(String(userId))
     .collection(collectionName);
-  await collectionRef.doc(previousData).update({ task: updatedData });
+  await collectionRef.doc(editFieldId).update({ [key]: updatedData });
 };
 
 module.exports = { readData, writeData, deleteData, updateData };
