@@ -43,18 +43,5 @@ or
 npm run dev
 ```
 
-## Usage
-
-📋 **Tasks**:
-
-- /task add [task] - Add a new task
-- /task list [category] - View the task list (optional by category)
-- /task delete [number] - Delete a task by its number
-
-📂 **Categories**:
-
-- /category add [category name] - Add a new category
-- /category list - View the list of categories
-- /category delete [category name] - Delete a specific category
-
 Happy organizing your tasks! 🌟
+2024
